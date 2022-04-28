@@ -1,0 +1,147 @@
+/* change font style (check out open sans, and other related fonts) */
+
+* {
+  /* border: 1px solid black; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* MEDIA QUERIES START HERE */
+
+@media only screen and (max-width: 500px) {
+
+  body {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #master {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  #nav-title {
+    max-width: 100%;
+  }
+
+  .div-link {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+
+  #navbar {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #main-doc {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width:500px) {
+  body {
+    flex-direction: row;
+  }
+
+  #master {
+    flex-direction: row;
+  }
+
+  #navbar {
+    position: fixed;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+  }
+
+  #nav-title {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+
+  .div-link {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    border: 1px solid white;
+    padding: 5px;
+    color: black;;
+  }
+
+  main {
+    display: block;
+  }
+
+  #main-doc {
+    margin-left: 250px;
+    position: absolute;
+  }
+}
+
+/* MEDIA QUERIES END HERE */
+
+html {
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+}
+
+#master {
+  display: flex;
+}
+
+.div-link {
+  display: flex;
+}
+
+.nav-link, .info {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#navbar {
+  display: flex;
+  background-color: #3D4E75;
+}
+
+#nav-title {
+  background-color: #CAD7F7;
+}
+
+.nav-link {
+  background-color: #CAD7F7;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: white;
+}
+
+#main-doc {
+  max-width: 100%;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+code {
+  background-color: lightgray;
+}
